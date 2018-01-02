@@ -3,7 +3,7 @@ A bookmarklet based toolkit to add missing functionality to the Glowforge UI.
 
 ## Installation:
 To install the bookmarklet, simply drag the following link to your bookmarks bar:
-<a id="install-bookmarklet" href="javascript:(function(){var gft_loader=document.createElement('script');gft_loader.setAttribute('src','https://elusive-concepts.com/demo/gf-tools/loader.js');document.body.appendChild(gft_loader);}).call(this);">GF Toolkit</a>
+[GF Toolkit](javascript:(function(\){var gft_loader=document.createElement('script'\);gft_loader.setAttribute('src','https://elusive-concepts.com/demo/gf-tools/loader.js'\);document.body.appendChild(gft_loader\);}\).call(this\);)
 
 Alternatively, you can create a new bookmark, and paste the following as the page URL:
 ```javascript
