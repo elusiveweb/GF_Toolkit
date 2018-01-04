@@ -111,6 +111,21 @@ console.log('GF Toolkit - by Elusive Concepts, LLC. (https://elusive-concepts.co
 
 
 	/**
+	 * Ignore all steps
+	 */
+	GFTK.ignoreAll = function()
+	{
+		var steps = GFTK.getReactComponent('.steps');
+		var settings = GFTK.getSettings();
+
+		for(var i in settings.steps)
+		{
+			steps.props.onChangeType(settings.steps[i].id, 'ignore');
+		}
+	}
+
+
+	/**
 	 * Load a saved settings file
 	 */
 	GFTK.loadSettings = function()
