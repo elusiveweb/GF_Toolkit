@@ -1,0 +1,110 @@
+#gftk
+{
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+#gftk #gftk-panel
+{
+	position: relative;
+	height: auto;
+	max-height: 0px;
+	padding: 0px;
+	background: #357;
+	border: 0px solid #035;
+	border-radius: 4px 4px 0px 0px;
+	transition: all 0.5s ease-in;
+}
+
+#gftk.open #gftk-panel
+{
+	max-height: 100px;
+	padding: 10px;
+	border-width: 1px;
+}
+
+#gftk .gftk-title
+{
+	cursor: pointer;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	width: 125px;
+	padding: 5px 10px;
+	transform: translateX(-50%);
+
+	color: #FFF;
+	font: 15px/1.2 "Open Sans", Arial, sans-serif;
+
+	background: #357;
+	border: 1px solid #035;
+	border-bottom: none;
+	border-radius: 4px 4px 0px 0px;
+}
+
+#gftk .gftk-toggle
+{
+	position: absolute;
+	right: 5px;
+}
+
+#gftk .gftk-divider
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 1px;
+	height: 40px;
+	margin: 0px 10px;
+	background: #024;
+	border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+#gftk button, #gftk a.gftk-button
+{
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+	padding: 10px 15px;
+	color: #FFF;
+	font: 13px/1.2 "Open Sans", Arial, sans-serif;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	text-decoration: none;
+	background: #68A;
+	background-image: linear-gradient(to bottom, #68A, #468);
+	border: 1px solid #024;
+	border-radius: 4px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+	outline: none;
+}
+
+#gftk #gftk-panel button:hover, #gftk a.gftk-button:hover
+{
+	text-decoration: none;
+	background: #8AC;
+	background-image: linear-gradient(to bottom, #8AC, #68A);
+}
+
+#gftk #gftk-panel button:active, #gftk a.gftk-button:active
+{
+	text-decoration: none;
+	background: #246;
+	background-image: linear-gradient(to bottom, #246, #468);
+	box-shadow: inset 0px 2px 4px rgba(0,0,0,0.3);
+	outline: none;
+}
+
+#gftk .gftk-save-settings
+{
+
+}
+
+#gftk .gftk-load-settings
+{
+
+}
+
