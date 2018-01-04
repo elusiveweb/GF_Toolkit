@@ -1,0 +1,4 @@
+<IfModule mod_headers.c>
+	Header set Access-Control-Allow-Origin "https://app.glowforge.com"
+	Header set Access-Control-Allow-Methods "POST, GET"
+</IfModule>
